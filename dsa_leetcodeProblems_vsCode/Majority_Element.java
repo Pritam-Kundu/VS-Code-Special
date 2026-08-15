@@ -27,7 +27,7 @@ public class Majority_Element {
 
 
 // OPTIMIZED APPROACH [O(nlogn)]
-
+/* 
 import java.util.Arrays;
 
 public class Majority_Element {
@@ -54,5 +54,42 @@ public class Majority_Element {
             }
 
         }
+    }
+}
+*/
+
+
+
+// Moore's Voting Algorithm [O(n)]
+
+import java.util.*;
+
+public class Majority_Element {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter size of the array:");
+        int n = sc.nextInt();
+        int[] nums = new int[n];
+
+        // int[] nums = {1,2,3,1,3,2,3,3,3};
+        for(int i=0;i<n;i++){
+            nums[i] = sc.nextInt();
+        }
+
+        int freq = 0, ans = 0;
+        for(int i=0;i<n;i++){
+            if(freq == 0){
+                ans = nums[i];
+            }
+            if (ans == nums[i]){
+                freq++;
+            }
+            else{
+                freq--;
+            }
+        }
+        System.out.println("Majority element is:"+ans);
     }
 }
