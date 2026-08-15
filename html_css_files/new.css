@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    padding: 12px;
+}
+.button{
+    border-radius: 100%;
+    padding: 30px;
+    border: dashed rgb(21, 0, 255);
+}
+#grey{
+    background-color: grey;
+    color: black;
+}
+#white{
+    background-color: whitesmoke;
+    color: black;
+}
+#yellow{
+    background-color: yellow;
+    color: black;
+}
+#red{
+    background-color: red;
+    color: black;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+}
