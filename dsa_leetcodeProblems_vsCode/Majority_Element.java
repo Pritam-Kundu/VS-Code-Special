@@ -91,5 +91,19 @@ public class Majority_Element {
             }
         }
         System.out.println("Majority element is:"+ans);
+
+        //Chekcing whether the majority element exists or not
+        // int count=0;
+        // for(int i=0;i<n;i++){
+        //     if(nums[i] == ans){
+        //         count++;
+        //     }
+        // }
+        // if(count > n/2){
+        //     return ans;
+        // }
+        // else{
+        //     return -1;
+        // }
     }
 }
